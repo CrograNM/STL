@@ -24,5 +24,7 @@ int main()
 void save(const std::string& fileName)
 {
 	std::cout << fileName << " 이(가) 저장되었습니다." << std::endl;
-	//1. 인자로 전달된 fileName을 읽기 모드로 연다
+	// 1. 인자로 전달된 fileName을 읽기 모드로 연다
+	// 2. 쓰기 모드로 저장할 파일을 연다.(덧붙이기 모드로)
+	// 3. 파일을 읽어서 저장할 파일에 덧붙인다.
 };
