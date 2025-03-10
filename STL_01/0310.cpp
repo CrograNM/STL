@@ -3,11 +3,6 @@
 //--------------------------------------------------------------------
 // 한 학기 강의를 저장할 save 기능
 //--------------------------------------------------------------------
-// 컴파일 환경
-// Visual Studio version 17.13. 이후 버전 사용
-// Release / x64, 
-// 프로젝트 설정, C++언어 - /std:c++ latest, SDL 검사 - 아니요
-//--------------------------------------------------------------------
 
 #include <iostream>
 #include <string>
@@ -20,7 +15,7 @@ int main()
 {
 	std::cout << "2025년 3학년 1학기 STL" << std::endl;
 
-	save("메인.cpp");
+	save("0310.cpp");
 }
 
 // string view 는 (최신) 경량 객체로, 읽기만 가능하고 수정할 수 없다.
@@ -39,4 +34,8 @@ void save( std::string_view fileName)
 	std::ofstream out{ "2025 1학기 STL 월910 목910 강의저장.txt", std::ios::app};
 	
 	// 3. 파일을 읽어서 저장할 파일에 덧붙인다.
+	char c;
+	in >> std::noskipws;
+	while (in >> c)
+		out << c;
 };
