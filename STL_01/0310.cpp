@@ -40,7 +40,8 @@ void save( std::string_view fileName)
 	std::ofstream out{ "2025 1학기 STL 월910 목910 강의저장.txt", std::ios::app};
 	
 	// 3. 파일을 읽어서 저장할 파일에 덧붙인다.
-	std::vector<char> v; 
+	std::vector<char> v(std::filesystem::file_size(fileName));
 	// while은 매번 읽으며 '평가'를 하기 때문에 비효율적임
-	
+	std::copy(std::istreambuf_iterator{ in }, {}, v.begin());
+	std::copy(v.begin(), v.end(), std::ostreambuf_iterator{out});
 };
