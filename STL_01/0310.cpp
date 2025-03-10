@@ -10,9 +10,11 @@
 //--------------------------------------------------------------------
 
 #include <iostream>
+#include <string>
+#include <fstream>
 
 
-void save( std::string_view ); 
+void save( std::string_view fileName);
 
 int main()
 {
@@ -21,10 +23,18 @@ int main()
 	save("메인.cpp");
 }
 
-void save( std::string_view ) //string view 는 경량 객체로, 읽기만 가능하고 수정할 수 없다.
+// string view 는 (최신) 경량 객체로, 읽기만 가능하고 수정할 수 없다.
+void save( std::string_view fileName)
 {
 	// 1. 인자로 전달된 fileName을 읽기 모드로 연다
+	std::ifstream in{ fileName.data()}; // RAII*** cpp 핵심 기능
 	
+	if ( not in )
+	{
+		std::cout << fileName << "을 열 수 없습니다." << std::endl;
+		exit(20250310);
+	}
+
 	// 2. 쓰기 모드로 저장할 파일을 연다.(덧붙이기 모드로)
 	
 	// 3. 파일을 읽어서 저장할 파일에 덧붙인다.
