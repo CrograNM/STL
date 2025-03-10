@@ -7,7 +7,9 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-
+#include <vector>
+#include <algorithm>
+#include <filesystem>
 
 void save( std::string_view fileName);
 
@@ -30,12 +32,15 @@ void save( std::string_view fileName)
 		exit(20250310);
 	}
 
+	// 저장했다는 것을 화면에 표시하자.
+	std::cout << fileName << "(" << std::filesystem::file_size(fileName)
+		<< " bytes) 저장하였습니다." << std::endl;
+
 	// 2. 쓰기 모드로 저장할 파일을 연다.(덧붙이기 모드로)
 	std::ofstream out{ "2025 1학기 STL 월910 목910 강의저장.txt", std::ios::app};
 	
 	// 3. 파일을 읽어서 저장할 파일에 덧붙인다.
-	char c;
-	in >> std::noskipws;
-	while (in >> c)
-		out << c;
+	std::vector<char> v; 
+	// while은 매번 읽으며 '평가'를 하기 때문에 비효율적임
+	
 };
