@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\source\\repos\\STL\\STL\\STL_01\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FB4235A9-0AEE-48AD-BE2C-215E75E37E03}|STL_01.vcxproj|C:\\Users\\ASUS\\source\\repos\\STL\\STL\\STL_01\\0310_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FB4235A9-0AEE-48AD-BE2C-215E75E37E03}|STL_01.vcxproj|solutionrelative:0310_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{FB4235A9-0AEE-48AD-BE2C-215E75E37E03}|STL_01.vcxproj|C:\\Users\\ASUS\\source\\repos\\STL\\STL\\STL_01\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FB4235A9-0AEE-48AD-BE2C-215E75E37E03}|STL_01.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FB4235A9-0AEE-48AD-BE2C-215E75E37E03}|STL_01.vcxproj|C:\\Users\\ASUS\\source\\repos\\STL\\STL\\STL_01\\2025 1\uD559\uAE30 STL \uC6D4910 \uBAA9910 \uAC15\uC758\uC800\uC7A5.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{FB4235A9-0AEE-48AD-BE2C-215E75E37E03}|STL_01.vcxproj|solutionrelative:2025 1\uD559\uAE30 STL \uC6D4910 \uBAA9910 \uAC15\uC758\uC800\uC7A5.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB4235A9-0AEE-48AD-BE2C-215E75E37E03}|STL_01.vcxproj|C:\\Users\\ASUS\\source\\repos\\STL\\STL\\STL_01\\save.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FB4235A9-0AEE-48AD-BE2C-215E75E37E03}|STL_01.vcxproj|solutionrelative:save.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,17 +32,30 @@
         },
         {
           "DockedHeight": 389,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "save.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\STL\\STL\\STL_01\\save.cpp",
+              "RelativeDocumentMoniker": "save.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\STL\\STL\\STL_01\\save.cpp",
+              "RelativeToolTip": "save.cpp",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACMAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-13T08:40:07.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "0310_1.cpp",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\STL\\STL\\STL_01\\0310_1.cpp",
-              "RelativeDocumentMoniker": "0310_1.cpp",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\STL\\STL\\STL_01\\0310_1.cpp",
-              "RelativeToolTip": "0310_1.cpp",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAwC4AAAA0AAAA",
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\STL\\STL\\STL_01\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\STL\\STL\\STL_01\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAAA4AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-10T10:02:23.684Z",
               "EditorCaption": ""
@@ -49,9 +66,9 @@
               "Title": "2025 1\uD559\uAE30 STL \uC6D4910 \uBAA9910 \uAC15\uC758\uC800\uC7A5.txt",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\STL\\STL\\STL_01\\2025 1\uD559\uAE30 STL \uC6D4910 \uBAA9910 \uAC15\uC758\uC800\uC7A5.txt",
               "RelativeDocumentMoniker": "2025 1\uD559\uAE30 STL \uC6D4910 \uBAA9910 \uAC15\uC758\uC800\uC7A5.txt",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\STL\\STL\\STL_01\\2025 1\uD559\uAE30 STL \uC6D4910 \uBAA9910 \uAC15\uC758\uC800\uC7A5.txt",
-              "RelativeToolTip": "2025 1\uD559\uAE30 STL \uC6D4910 \uBAA9910 \uAC15\uC758\uC800\uC7A5.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAjAAAA",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\STL\\STL\\STL_01\\2025 1\uD559\uAE30 STL \uC6D4910 \uBAA9910 \uAC15\uC758\uC800\uC7A5.txt*",
+              "RelativeToolTip": "2025 1\uD559\uAE30 STL \uC6D4910 \uBAA9910 \uAC15\uC758\uC800\uC7A5.txt*",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAD8AAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-03-10T09:33:21.664Z",
               "EditorCaption": ""

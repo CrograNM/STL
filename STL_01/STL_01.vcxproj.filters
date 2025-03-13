@@ -18,7 +18,10 @@
     <ClCompile Include="메인.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="0310_1.cpp">
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="save.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -26,5 +29,10 @@
     <Text Include="2025 1학기 STL 월910 목910 강의저장.txt">
       <Filter>소스 파일</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="save.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
