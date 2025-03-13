@@ -31,7 +31,7 @@
           ]
         },
         {
-          "DockedHeight": 389,
+          "DockedHeight": 325,
           "SelectedChildIndex": 1,
           "Children": [
             {
@@ -53,9 +53,9 @@
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\STL\\STL\\STL_01\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\STL\\STL\\STL_01\\main.cpp",
-              "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAAA4AAAAQAAAA",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\STL\\STL\\STL_01\\main.cpp*",
+              "RelativeToolTip": "main.cpp*",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABkAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-10T10:02:23.684Z",
               "EditorCaption": ""
@@ -66,9 +66,9 @@
               "Title": "2025 1\uD559\uAE30 STL \uC6D4910 \uBAA9910 \uAC15\uC758\uC800\uC7A5.txt",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\STL\\STL\\STL_01\\2025 1\uD559\uAE30 STL \uC6D4910 \uBAA9910 \uAC15\uC758\uC800\uC7A5.txt",
               "RelativeDocumentMoniker": "2025 1\uD559\uAE30 STL \uC6D4910 \uBAA9910 \uAC15\uC758\uC800\uC7A5.txt",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\STL\\STL\\STL_01\\2025 1\uD559\uAE30 STL \uC6D4910 \uBAA9910 \uAC15\uC758\uC800\uC7A5.txt*",
-              "RelativeToolTip": "2025 1\uD559\uAE30 STL \uC6D4910 \uBAA9910 \uAC15\uC758\uC800\uC7A5.txt*",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAD8AAAACAAAA",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\STL\\STL\\STL_01\\2025 1\uD559\uAE30 STL \uC6D4910 \uBAA9910 \uAC15\uC758\uC800\uC7A5.txt",
+              "RelativeToolTip": "2025 1\uD559\uAE30 STL \uC6D4910 \uBAA9910 \uAC15\uC758\uC800\uC7A5.txt",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAAABcAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-03-10T09:33:21.664Z",
               "EditorCaption": ""
@@ -76,7 +76,7 @@
           ]
         },
         {
-          "DockedHeight": 77,
+          "DockedHeight": 141,
           "SelectedChildIndex": -1,
           "Children": [
             {

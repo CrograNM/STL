@@ -1,17 +1,53 @@
-//--------------------------------------------------------------------
-// 2025. 3-1. STL, 3월 10일 월요일 (1주 2일)
-//--------------------------------------------------------------------
-// 한 학기 강의를 저장할 save 기능
-//--------------------------------------------------------------------
 
 #include <iostream>
 #include "save.h"
+using namespace std; // 여러분은 이렇게 하지 마세요
+
+// [문제] main을 변경하지 않고 의도대로 실행되게 코딩하라
+
+// 꼼수1: #define Dog int 
+// 꼼수2: using Dog = int; (꼼수1 보다는 훨씬 좋음)
+
+// [조건] Dog를 클래스로 쓰시오
+
+class Dog
+{
+public:
+	int data;
+	Dog(int num)
+	{
+		data = num;
+	}
+	operator int() { return data; } // 나의 답 : int() Wrapping
+};
+
+void change(int&, int&);
+void change(Dog&, Dog&);
 
 int main()
 {
-	std::cout << "2025년 3학년 1학기 STL" << std::endl;
+	{
+		Dog a{ 1 }, b{ 2 }; // 초기화는 { }로 하자!
+		change(a, b);
+		cout << a << ", " << b << endl; // [출력] 2, 1
+	}
+	{
+		int a{ 1 }, b{ 2 }; // 초기화는 { }로 하자!
+		change(a, b);
+		cout << a << ", " << b << endl; // [출력] 2, 1
+	}
+	//save("main.cpp");
+}
 
-	save("main.cpp");
-	save("save.h");
-	save("save.cpp");
+void change(int& num1, int& num2)
+{
+	int temp{ num1 };	// 저장
+	num1 = num2;		
+	num2 = temp;		
+}
+void change(Dog& num1, Dog& num2)
+{
+	int temp{ num1.data };	// 저장
+	num1.data = num2.data;
+	num2.data = temp;
 }
