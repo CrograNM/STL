@@ -1,24 +1,29 @@
-
+ï»¿
 #include <iostream>
 #include "save.h"
-using namespace std; // ¿©·¯ºĞÀº ÀÌ·¸°Ô ÇÏÁö ¸¶¼¼¿ä
+using namespace std;
 
-// [¹®Á¦] mainÀ» º¯°æÇÏÁö ¾Ê°í ÀÇµµ´ë·Î ½ÇÇàµÇ°Ô ÄÚµùÇÏ¶ó
+// [ë¬¸ì œ] mainì„ ë³€ê²½í•˜ì§€ ì•Šê³  ì˜ë„ëŒ€ë¡œ ì‹¤í–‰ë˜ê²Œ ì½”ë”©í•˜ë¼
 
-// ²Ä¼ö1: #define Dog int 
-// ²Ä¼ö2: using Dog = int; (²Ä¼ö1 º¸´Ù´Â ÈÎ¾À ÁÁÀ½)
+// ê¼¼ìˆ˜1: #define Dog int 
+// ê¼¼ìˆ˜2: using Dog = int; (ê¼¼ìˆ˜1 ë³´ë‹¤ëŠ” í›¨ì”¬ ì¢‹ìŒ)
 
-// [Á¶°Ç] Dog¸¦ Å¬·¡½º·Î ¾²½Ã¿À
+// [ì¡°ê±´] Dogë¥¼ í´ë˜ìŠ¤ë¡œ ì“°ì‹œì˜¤
 
 class Dog
 {
 public:
-	int data;
-	Dog(int num)
-	{
-		data = num;
+	Dog() = default;
+	Dog(int n) : num{ n } {}
+
+
+private:
+	int num;	// 4 + 4
+
+	friend ostream& operator<<(ostream& os, const Dog& dog) { 
+		// friend í‚¤ì›Œë“œë¡œ ostreamì—ê²Œ Dogë¥¼ ëª¨ë‘ ê³µê°œ
+		return os << dog.num;
 	}
-	operator int() { return data; } // ³ªÀÇ ´ä : int() Wrapping
 };
 
 void change(int&, int&);
@@ -27,27 +32,32 @@ void change(Dog&, Dog&);
 int main()
 {
 	{
-		Dog a{ 1 }, b{ 2 }; // ÃÊ±âÈ­´Â { }·Î ÇÏÀÚ!
-		change(a, b);
-		cout << a << ", " << b << endl; // [Ãâ·Â] 2, 1
+		Dog a{ 1 }, b{ 2 };
+		change(a, b); // ë„ëŒ€ì²´ ì–´ë–¤ í•¨ìˆ˜ë¥¼ í˜¸ì¶œí•˜ëŠ” ê²ƒì¸ê°€?
+		// 1. change(Dog, Dog);
+		// 2. change(Dog&, Dog&);
+		// 3. 1, 2ê°€ ì—†ìœ¼ë©´, ì»´íŒŒì¼ëŸ¬ê°€ ì§ì ‘ ë§Œë“ ë‹¤?
+
+		cout << a << ", " << b << endl; // [ì¶œë ¥] 2, 1
 	}
 	{
-		int a{ 1 }, b{ 2 }; // ÃÊ±âÈ­´Â { }·Î ÇÏÀÚ!
+		int a{ 1 }, b{ 2 };
 		change(a, b);
-		cout << a << ", " << b << endl; // [Ãâ·Â] 2, 1
+		cout << a << ", " << b << endl; // [ì¶œë ¥] 2, 1
 	}
+
 	//save("main.cpp");
 }
 
 void change(int& num1, int& num2)
 {
-	int temp{ num1 };	// ÀúÀå
+	int temp{ num1 };	// ì €ì¥
 	num1 = num2;		
 	num2 = temp;		
 }
 void change(Dog& num1, Dog& num2)
 {
-	int temp{ num1.data };	// ÀúÀå
-	num1.data = num2.data;
-	num2.data = temp;
+	Dog temp{ num1 };	// ì €ì¥
+	num1 = num2;
+	num2 = temp;
 }
